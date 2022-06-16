@@ -4,20 +4,13 @@ import pickle
 
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
 import seaborn as sns
 from dotenv import find_dotenv, load_dotenv
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn import preprocessing
+from sklearn import metrics, preprocessing
 from sklearn.model_selection import train_test_split
-import seaborn as sns
-from sklearn import metrics
 
 from constants import *
-
 
 # Use the pgf backend
 mpl.use('pgf')
@@ -215,7 +208,7 @@ def visualize_pairplot_to_discover_relevant_features(df: pd.DataFrame) -> None:
     Args:
         df (pd.DataFrame): the data as a dataframe
     """
-    sns.pairplot(df, hue="current_side", kind='reg', plot_kws={'line_kws':{'color':'red'}, 'scatter_kws': {'alpha': 0.1}})
+    sns.pairplot(df.sample(5000), hue="current_side", kind='reg', plot_kws={'scatter_kws': {'alpha': 0.1}})
     plt.savefig('./reports/figures/pairplot.pgf')
     logger.info(
         f"💾 Plot stored as: './reports/figures/pairplot.pgf'")

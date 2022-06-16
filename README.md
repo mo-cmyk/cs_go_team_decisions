@@ -163,7 +163,8 @@ The project is structured in the following way:
 │       ├── buy_type_probability-img0.png
 │       ├── buy_type_probability.pgf
 │       ├── game_win_probability_by_rounds-img0.png
-│       └── game_win_probability_by_rounds.pgf
+│       ├── game_win_probability_by_rounds.pgf
+│       └── pairplot.pgf
 ├── requirements.txt
 ├── setup.py
 ├── src
@@ -183,7 +184,108 @@ The project is structured in the following way:
 ├── test_environment.py
 └── tox.ini
 
-13 directories, 76 files
+13 directories, 77 files
+
+user: moritz cs_go_team_decisions on 🌱 main [!?] via 🐍 v3.9.7 via 🅒 fusionbase_3.9
+❯ curl http://ergast.com/
+^C
+
+user: moritz cs_go_team_decisions on 🌱 main [!?] via 🐍 v3.9.7 via 🅒 fusionbase_3.9 took 4s
+❯ tree .
+.
+├── LICENSE
+├── Makefile
+├── README.md
+├── data
+│   ├── interim
+│   │   ├── 9z-vs-meta-py-nuke.json
+│   │   ├── b8-vs-run-or-die-m4-vertigo.json
+│   │   ├── bears-vs-isurus-m1-ancient_68896.json
+│   │   ├── black-dragons-vs-intz-m2-vertigo.json
+│   │   ├── bth-vs-boca-juniors-m2-dust2.json
+│   │   ├── coscu-army-vs-isurus-nuke.json
+│   │   ├── croatia-vs-czech-republic-mirage.json
+│   │   ├── enterprise-vs-kappab-m2-overpass.json
+│   │   ├── exploit-vs-souldazz-nuke.json
+│   │   ├── furious-vs-paqueta-m3-vertigo.json
+│   │   ├── gaijin-vs-prifu-m1-mirage.json
+│   │   ├── gaijin-vs-prifu-m2-overpass.json
+│   │   ├── iberian-family-vs-offset-m2-vertigo.json
+│   │   ├── isurus-vs-eqole-inferno.json
+│   │   ├── isurus-vs-intz-dust2.json
+│   │   ├── isurus-vs-leviatan-m2-nuke.json
+│   │   ├── kappab-vs-biiceps-m2-mirage_66795.json
+│   │   ├── nexus-vs-portugal-m1-dust2.json
+│   │   ├── order-vs-paradox-m1-dust2.json
+│   │   ├── sestri-vs-ec-kyiv-m2-inferno.json
+│   │   └── virtus-pro-vs-gambit-vertigo.json
+│   ├── lookups
+│   │   └── event_lookup__2021_04_01__2022_04_01__ONLINE.json
+│   ├── processed
+│   │   ├── team_score_and_buy__dataset.feather
+│   │   └── team_score_and_buy__dataset__training.feather
+│   └── raw
+│       ├── 9z-vs-meta-py-nuke.dem
+│       ├── b8-vs-run-or-die-m4-vertigo.dem
+│       ├── bears-vs-isurus-m1-ancient_68896.dem
+│       ├── black-dragons-vs-intz-m2-vertigo.dem
+│       ├── bth-vs-boca-juniors-m2-dust2.dem
+│       ├── coscu-army-vs-isurus-nuke.dem
+│       ├── croatia-vs-czech-republic-mirage.dem
+│       ├── enterprise-vs-kappab-m2-overpass.dem
+│       ├── exploit-vs-souldazz-nuke.dem
+│       ├── furious-vs-paqueta-m3-vertigo.dem
+│       ├── gaijin-vs-prifu-m1-mirage.dem
+│       ├── gaijin-vs-prifu-m2-overpass.dem
+│       ├── iberian-family-vs-offset-m2-vertigo.dem
+│       ├── isurus-vs-eqole-inferno.dem
+│       ├── isurus-vs-intz-dust2.dem
+│       ├── isurus-vs-leviatan-m2-nuke.dem
+│       ├── kappab-vs-biiceps-m2-mirage_66795.dem
+│       ├── nexus-vs-portugal-m1-dust2.dem
+│       ├── order-vs-paradox-m1-dust2.dem
+│       ├── sestri-vs-ec-kyiv-m2-inferno.dem
+│       └── virtus-pro-vs-gambit-vertigo.dem
+├── models
+│   ├── decision_tree_classifier.pkl
+│   ├── logistic_regression.pkl
+│   ├── mlp_classifier.pkl
+│   └── mlp_classifier_with_maps.pkl
+├── notebooks
+│   ├── DataExploration.ipynb
+│   └── HyperparameterTuning.ipynb
+├── reports
+│   └── figures
+│       ├── auroc_curves_model_comparison.pgf
+│       ├── auroc_curves_model_maps.pgf
+│       ├── buy_type_count-img0.png
+│       ├── buy_type_count.pgf
+│       ├── buy_type_probability-img0.png
+│       ├── buy_type_probability.pgf
+│       ├── feature_importance.pgf
+│       ├── game_win_probability_by_rounds-img0.png
+│       ├── game_win_probability_by_rounds.pgf
+│       └── pairplot.pgf
+├── requirements.txt
+├── setup.py
+├── src
+│   ├── __init__.py
+│   ├── data
+│   │   ├── __init__.py
+│   │   ├── constants.py
+│   │   ├── make_dataset.py
+│   │   └── parse_data.py
+│   ├── models
+│   │   ├── __init__.py
+│   │   └── train_model.py
+│   └── visualization
+│       ├── __init__.py
+│       ├── constants.py
+│       └── visualize.py
+├── test_environment.py
+└── tox.ini
+
+13 directories, 78 files
 
 ```
 ## License
