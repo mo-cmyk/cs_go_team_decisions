@@ -193,9 +193,6 @@ The project is structured in the following way:
 The source code for the site is licensed under the MIT license, which you can find in
 the MIT-LICENSE.txt file.
 
-All graphical assets are licensed under the
-[Creative Commons Attribution 3.0 Unported License](https://creativecommons.org/licenses/by/3.0/).
-
 ## Notes  
 ⚠️ Warning the demofiles provided in this repository do not correlate to the event lookup nor to the complete training dataset provided. They are mereley for demonstrations purposes and are not enough to provide relevant data.
 
