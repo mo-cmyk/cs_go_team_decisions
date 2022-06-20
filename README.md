@@ -1,4 +1,4 @@
-# CS:GO Aanalyzing Team level Decisions and Modeling Win Probability in COUNTER-STRIKE: GLOBAL OFFENSIVE 🔫
+# CS:GO Analyzing Team level Decisions and Modeling Win Probability in COUNTER-STRIKE: GLOBAL OFFENSIVE 🔫
 
 This is the code and a little demodata as well as a guide to go for the extra mile 🏃‍♀️ to test the code with demofiles at a large scale.
 
@@ -152,6 +152,7 @@ The project is structured in the following way:
 │   ├── mlp_classifier.pkl
 │   └── mlp_classifier_with_maps.pkl
 ├── notebooks
+│   ├── AdvisingPlayerDecisions.ipynb
 │   ├── DataExploration.ipynb
 │   └── HyperparameterTuning.ipynb
 ├── reports
@@ -162,6 +163,7 @@ The project is structured in the following way:
 │       ├── buy_type_count.pgf
 │       ├── buy_type_probability-img0.png
 │       ├── buy_type_probability.pgf
+│       ├── comparing_optimal_and_actual.pgf
 │       ├── feature_importance.pgf
 │       ├── game_win_probability_by_rounds-img0.png
 │       ├── game_win_probability_by_rounds.pgf
@@ -185,7 +187,7 @@ The project is structured in the following way:
 ├── test_environment.py
 └── tox.ini
 
-13 directories, 78 files
+13 directories, 80 files
 
 ```
 ## License
