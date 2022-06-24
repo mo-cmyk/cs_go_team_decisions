@@ -1,4 +1,4 @@
-# CS:GO Analyzing Team Level Economics and Modeling Win Probability to support Player Decisions in COUNTER-STRIKE: GLOBAL OFFENSIVE 🔫
+# TOWARDS TEAM BUY DECISION SUPPORT IN COUNTER-STRIKE: GLOBAL OFFENSIVE 🔫
 
 This is the code and a little demodata as well as a guide to go for the extra mile 🏃‍♀️ to test the code with demofiles at a large scale.
 
