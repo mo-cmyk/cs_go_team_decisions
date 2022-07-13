@@ -1,6 +1,6 @@
 # TOWARDS TEAM BUY DECISION SUPPORT IN COUNTER-STRIKE: GLOBAL OFFENSIVE 🔫
 
-This is the code and a little demodata as well as a guide to go for the extra mile 🏃‍♀️ to test the code with demofiles at a large scale.
+This is the code and a little demodata as well as a guide to go for the extra mile 🏃‍♀️ to test the code with demofiles at a large scale, for a research paper on supporting team level decisions in Counter-Strike: Global Offensive
 
 ## TL;DR
 This is an overview of all functions in this project
